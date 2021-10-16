@@ -1,10 +1,20 @@
+import java.util.*;
 public class MatrixMultiplicationExample{  
-public static void main(String args[]){  
-//creating two matrices    
-int a[][]={{1,1,1},{2,2,2},{3,3,3}};    
-int b[][]={{1,1,1},{2,2,2},{3,3,3}};    
-    
-//creating another matrix to store the multiplication of two matrices    
+public static void main(String args[]){ 
+ Scanner kb = new Scanner(System.in); 
+int a[][]=new int [3][3];    
+int b[][]=new int [3][3];  
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        a[i][j]=kb.nextInt();
+    }
+}  
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        b[i][j]=kb.nextInt();
+    }
+}  
+
 int c[][]=new int[3][3];  //3 rows and 3 columns  
     
 //multiplying and printing multiplication of 2 matrices    
